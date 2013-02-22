@@ -1,0 +1,1 @@
+<?php$db_host = 'localhost';$db_name = 'tutorials';$db_user = 'root';$db_pass = '123456';function connect()	{	global $db_host ,$db_name ,$db_user ,$db_pass ;	mysql_connect("$db_host","$db_user","$db_pass") or die('Error Connecting to Database ..');	mysql_select_db("$db_name") or die('Error Dealing with your database ..');	}connect();		?>
